@@ -19,8 +19,6 @@ void Rolldice(){
 }
 
 int main(){
- 
-  cout<<"Hello, "<<name<<"!"<<endl;
   cout<<"Rolling the dice..."<<endl;
   Rolldice();
   int d1=ran[0];
