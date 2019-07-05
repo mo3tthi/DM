@@ -28,7 +28,7 @@ int main(){
   cout<<"Die 1: "<<d1<<endl;
   cout<<"Die 2: "<<d2<<endl;
   cout<<"Total value: "<<total<<endl;
-  if(total > 7) cout<<name<<" won!"<<endl;
-  else cout<<name<<" lost."<<endl;
+  if(total > 7) cout<<"You won!"<<endl;
+  else cout<<"You lost."<<endl;
   return 0;
 }
