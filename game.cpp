@@ -19,6 +19,12 @@ void Rolldice(){
 }
 
 int main(){
+
+  cout<<"What is your name?"<<endl;
+  
+  string name;
+  cin>>name;
+  cout<<"Hello, "<<name<<"!"<<endl;
   cout<<"Rolling the dice..."<<endl;
   Rolldice();
   int d1=ran[0];
@@ -28,7 +34,7 @@ int main(){
   cout<<"Die 1: "<<d1<<endl;
   cout<<"Die 2: "<<d2<<endl;
   cout<<"Total value: "<<total<<endl;
-  if(total > 7) cout<<"You won!"<<endl;
-  else cout<<"You lost."<<endl;
+  if(total > 7) cout<<name<<" won!"<<endl;
+  else cout<<name<<" lost."<<endl;
   return 0;
 }
