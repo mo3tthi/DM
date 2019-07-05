@@ -12,20 +12,23 @@ typedef long long int ll;
 
 int ran[6]={1,2,3,4,5,6};
 
-void randset(){
+void Rolldice(){
   random_device gen;
   mt19937 engine(gen() );
   shuffle(ran,ran+6,engine);
 }
 
 int main(){
+ 
+  cout<<"Hello, "<<name<<"!"<<endl;
   cout<<"Rolling the dice..."<<endl;
-  randset();
+  Rolldice();
   int d1=ran[0];
-  randset();
+  Rolldice();
   int d2=ran[0];
+  int total=d1+d2;
   cout<<"Die 1: "<<d1<<endl;
   cout<<"Die 2: "<<d2<<endl;
-  cout<<"Total value: "<<d1+d2<<endl;
+  cout<<"Total value: "<<total<<endl;
   return 0;
 }
